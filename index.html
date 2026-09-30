@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="player-section">
+
+
+    <h1 class="background-title">Custom Video Player</h1>
+
+    <div class="video-container">
+
+        <video id="video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div id="errorMessage">
+                Video cannot be displayed.
+        </div>
+
+        <div class="controls">
+            <button id="playBtn">&#9654;</button>
+
+            <button id="rewindBtn">&#9664;&#9664;</button>  
+
+            <button id="fastForwardBtn">&#9654;&#9654;</button>
+
+            <input type="range" id="progress" min="0" max="100" value="0">
+            
+        <div class="time-display">
+            <span id="currentTime">0:00</span>
+            
+            <span class= "time-separator">/</span>
+
+            <span id="duration">0:00</span>
+        </div>
+
+            <button id="muteBtn">&#128266;</button>
+
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+
+            <button id="fullscreenBtn">&#x26F6;</button>
+
+        </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
